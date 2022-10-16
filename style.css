@@ -349,6 +349,11 @@ body {
   margin: 0 auto;
   margin-top: 4rem !important;
   margin-bottom: 2.5rem !important;
+  filter: invert(30%);
+}
+
+.leontebanking {
+  filter: invert(60%);
 }
 
 #my-projects .projects .project .description {
@@ -560,7 +565,7 @@ input,
 .input,
 textarea,
 select {
-  -webkit-appearance: none;
+  /* -webkit-appearance: none; */
   background-color: white;
   color: var(--color-dark);
   outline: none;
