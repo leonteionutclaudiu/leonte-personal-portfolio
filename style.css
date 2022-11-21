@@ -8,8 +8,8 @@
   --color-dark: #171614;
   --color-dark-light: #242424;
   --color-dark-light-2: #3a3a3a;
-  --font-primary: "Poppins", sans-serif;
-  --font-secondary: "Bebas Neue", cursive;
+  --font-primary: 'Poppins', sans-serif;
+  --font-secondary: 'Bebas Neue', cursive;
 }
 
 *,
@@ -117,7 +117,7 @@ body {
 }
 
 #statistics::before {
-  content: "";
+  content: '';
   display: block;
   background-color: var(--color-tertiary);
   width: 100%;
@@ -127,7 +127,7 @@ body {
 }
 
 #statistics::after {
-  content: "";
+  content: '';
   display: block;
   background-color: var(--color-tertiary);
   width: 100%;
@@ -204,7 +204,7 @@ body {
 }
 
 #my-experience::before {
-  content: "";
+  content: '';
   display: block;
   background-color: var(--color-tertiary);
   width: 100%;
@@ -214,7 +214,7 @@ body {
 }
 
 #my-experience::after {
-  content: "";
+  content: '';
   display: block;
   background-color: var(--color-tertiary);
   width: 100%;
@@ -280,9 +280,9 @@ body {
 }
 
 #my-experience .wrapper .jobs .job .stack-list li::before {
-  content: "\f121";
+  content: '\f121';
   margin-right: 0.5rem;
-  font-family: "Font Awesome 6 Free";
+  font-family: 'Font Awesome 6 Free';
   font-style: normal;
   font-variant: normal;
   line-height: 1;
@@ -302,9 +302,10 @@ body {
 }
 
 #my-projects .projects {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
 }
 
 #my-projects .projects .project {
@@ -315,6 +316,10 @@ body {
   text-align: center;
   transition: all 0.4s;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #my-projects .projects .project:hover {
@@ -329,7 +334,7 @@ body {
 #my-projects .projects .project .name {
   color: var(--color-tertiary);
   margin-bottom: 1rem;
-  font-family: "Bebas Neue";
+  font-family: 'Bebas Neue';
   font-size: 2rem;
 }
 
@@ -363,7 +368,7 @@ body {
 }
 
 #tech-stack::before {
-  content: "";
+  content: '';
   display: block;
   background-color: var(--color-tertiary);
   width: 100%;
@@ -373,7 +378,7 @@ body {
 }
 
 #tech-stack::after {
-  content: "";
+  content: '';
   display: block;
   background-color: var(--color-tertiary);
   width: 100%;
@@ -474,7 +479,7 @@ footer .page-links {
 }
 
 footer .page-links .name {
-  font-family: "Bebas Neue";
+  font-family: 'Bebas Neue';
   color: var(--color-tertiary);
   font-size: 1.75rem;
   margin-bottom: 0.5rem;
@@ -653,7 +658,7 @@ form .cta-button {
   }
 
   #my-projects .projects {
-    justify-content: center;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
@@ -684,8 +689,25 @@ form .cta-button {
   }
 }
 
+@media screen and (max-width: 1200px) {
+  #my-projects .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 @media screen and (max-width: 960px) {
   #about-me .description {
     flex-direction: column-reverse;
+  }
+
+  #my-projects .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #my-projects .projects {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
   }
 }
