@@ -237,8 +237,16 @@ body {
   row-gap: 2rem;
 }
 
+.itschool {
+  background-color: var(--color-secondary) !important;
+}
+
+.itschool:hover {
+  background-color: var(--color-secondary-light-2) !important;
+}
+
 #my-experience .wrapper .jobs .job {
-  background-color: var(--color-secondary);
+  background-color: var(--color-dark-light-2);
   padding: 1rem 2rem;
   max-width: 320px;
   width: 100%;
@@ -250,7 +258,7 @@ body {
 #my-experience .wrapper .jobs .job:hover {
   transform: translateY(-0.5rem);
   box-shadow: 0 0 10px rgba(235, 99, 36, 1);
-  background-color: var(--color-secondary-light-2);
+  background-color: var(--color-dark);
 }
 
 #my-experience .wrapper .jobs .job .company {
