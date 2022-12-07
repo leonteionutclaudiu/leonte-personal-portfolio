@@ -175,9 +175,9 @@ body {
 }
 
 #about-me .description .description-image {
-  max-width: 200px;
+  max-width: 500px;
   width: 100%;
-  transition: all 1s;
+  transition: all 0.7s;
 }
 
 #about-me .description .description-image:hover {
