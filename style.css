@@ -175,7 +175,7 @@ body {
 }
 
 #about-me .description .description-image {
-  max-width: 500px;
+  max-width: 300px;
   width: 100%;
   transition: all 0.7s;
 }
@@ -441,11 +441,6 @@ body {
   width: 100%;
 }
 
-/* #lets-talk .wrapper .contact-form form .cta-button {
-  display: block;
-  margin-top: 1rem;
-} */
-
 .btn-submit {
   background-color: var(--color-secondary);
   padding: 7px 15px;
@@ -551,6 +546,27 @@ footer .page-links .link-items .link i {
   border: 1px solid var(--color-secondary);
   transition: background-color 600ms !important;
   color: var(--color-light) !important;
+}
+
+.github-button {
+  background-color: var(--color-light);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  color: var(--color-dark-light-2);
+  text-decoration: none;
+}
+
+.github-button i {
+  color: var(--color-primary);
+  margin-right: 0.25rem;
+}
+
+.github-button:hover {
+  background-color: transparent;
+  padding: 7px 15px;
+  border: 1px solid var(--color-light);
+  transition: background-color 600ms !important;
+  color: var(--light) !important;
 }
 
 .section-title {
