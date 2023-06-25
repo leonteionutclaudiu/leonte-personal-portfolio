@@ -32,12 +32,15 @@ body {
 }
 
 .header {
-  /* padding: 2rem 1rem; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 100vw;
   padding: 2rem;
+  position: sticky;
+  top: 0;
+  background-color: var(--color-dark);
+  z-index: 9999;
 }
 
 .header .menu .menu-list {
@@ -331,7 +334,6 @@ body {
 }
 
 #my-projects .projects .project:hover {
-  /* border: 1px solid var(--color-primary); */
   background-color: var(--color-dark-light-2);
 
   transform: scale(1.1);
@@ -354,7 +356,6 @@ body {
   font-size: 20px;
   position: absolute;
   top: 0;
-  /* left: 0; */
   transform: translate(0%, -50%);
 }
 
@@ -435,6 +436,18 @@ body {
   font-size: 1.25rem;
   text-align: center;
   font-weight: 600;
+}
+
+#tech-stack .wrapper .techologies .technology img {
+  width: 100%;
+  max-width: 120px;
+  transition: all 0.4s;
+}
+
+#tech-stack .wrapper .techologies .technology img:hover {
+  filter: invert(41%) sepia(78%) saturate(2021%) hue-rotate(352deg)
+    brightness(101%) contrast(84%);
+  transform: scale(1.15);
 }
 
 #lets-talk {
@@ -602,11 +615,15 @@ footer .page-links .link-items .link i {
   color: var(--color-secondary);
 }
 
+.cursuri {
+  margin: 2rem 0 1rem 0;
+  text-align: center;
+}
+
 input,
 .input,
 textarea,
 select {
-  /* -webkit-appearance: none; */
   background-color: white;
   color: var(--color-dark);
   outline: none;
