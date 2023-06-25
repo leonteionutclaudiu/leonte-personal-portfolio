@@ -764,3 +764,9 @@ form .cta-button {
     justify-items: center;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 0.5rem;
+  }
+}
