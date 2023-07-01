@@ -180,6 +180,7 @@ body {
 #about-me .description .description-image {
   max-width: 300px;
   width: 100%;
+  border-radius: 40%;
   transition: all 0.7s;
 }
 
@@ -598,6 +599,19 @@ footer .page-links .link-items .link i {
   font-family: var(--font-secondary);
   font-size: 2rem;
   margin-bottom: 1.5rem;
+}
+
+.section-interview {
+  color: var(--color-tertiary);
+  font-family: var(--font-secondary);
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-decoration: none;
+  transition: color 1s;
+}
+
+.section-interview.color-transition {
+  color: var(--color-primary);
 }
 
 .section-title span {
